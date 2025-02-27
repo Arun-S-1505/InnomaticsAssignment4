@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">ShopEasy</div>
+      <nav>
+        <ul class="categories">
+          <li><a href="#" class="active" data-category="All">All</a></li>
+          <li><a href="#" data-category="Mobiles">Mobiles</a></li>
+          <li><a href="#" data-category="Laptops">Laptops</a></li>
+          <li><a href="#" data-category="Audio">Audio</a></li>
+          <li><a href="#" data-category="Wearables">Wearables</a></li>
+        </ul>
+        <div class="cart-icon">
+          <span class="cart-count">0</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shopping-cart">
+            <circle cx="8" cy="21" r="1"></circle>
+            <circle cx="19" cy="21" r="1"></circle>
+            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+          </svg>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Featured Products</h1>
+    <div class="products-grid" id="products-container">
+      <!-- Products will be dynamically added here -->
+    </div>
+  </main>
+
+  <div class="cart-overlay" id="cart-overlay"></div>
+  
+  <div class="cart-container" id="cart-container">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-price">$0.00</span>
+      </div>
+      <button class="checkout-btn">Checkout</button>
+      <button class="empty-cart-btn">Empty Cart</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
